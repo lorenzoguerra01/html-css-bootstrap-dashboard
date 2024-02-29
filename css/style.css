@@ -107,6 +107,9 @@ main {
     header div.container-fluid {
         padding-left: 0 !important;
     }
+    header li .fa-bell{
+        display: none;
+    }
     .img1{
         display: none;
     }
