@@ -20,6 +20,9 @@ a {
     color: var(--color-);
     text-decoration: none;
 }
+i {
+    cursor: pointer;
+}
 input::placeholder {
     font-size: small;
     color: gray;
