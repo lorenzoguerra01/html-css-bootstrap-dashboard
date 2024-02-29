@@ -1,0 +1,125 @@
+/* *****RESET***** */
+:root {
+    --color-header:#ffffff; 
+    --color-contain:#f8f9fa; 
+    --color-b-contain:#1b72e8; 
+    --color-sidebar:rgba(5,30,52); 
+    --color-searchbar:#e5e5e5; 
+}
+.ms_debug {
+    border: 1px solid red;
+}
+/* *****GENERAL***** */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    /* font-family: "Nome del Font", sans-serif;  */
+}
+a {
+    color: var(--color-);
+    text-decoration: none;
+}
+input::placeholder {
+    font-size: small;
+    color: gray;
+}
+/* font awsome{
+    content: "\";
+    font-family: 'Font Awesome\ 6 Free';
+    font-weight: 900;
+} */
+
+/* *******BODY*******  */
+/* header  */
+header {
+    height: 70px;
+    background-color: var(--color-header);
+}
+.img2 {
+    width: 40px;
+    scale: 1.6;
+}
+/* main  */
+main {
+    height: calc(100% - 70px);
+    display: flex;
+}
+.sidebar {
+    height: 100%;
+    width: 150px;
+    background-image: url("/img/sidebar-bg.png");
+    background-color: var(--color-sidebar);
+}
+.sidebar div{
+    margin: 15px;
+}
+.sidebar span{
+    padding-left: 10px;
+}
+
+.contain {
+    flex-grow: 1;
+    background-color: var(--color-contain);
+}
+.blue-contain {
+    height: 100px;
+    width: 100%;
+    background-color: var(--color-b-contain);
+}
+/* footer  */
+
+
+/* *******UTILITIES*******  */
+/* fontawsome  */
+.fa-bell {
+    color: orange;
+}
+/* text  */
+/* bg  */
+.ms_bg-search {
+    background-color: var(--color-searchbar) !important;
+}
+/* utility  */
+.ms_btn {
+    display: inline-block;
+    padding: 6px 12px;
+}
+.ms_no-wrap {
+    flex-wrap: nowrap !important; 
+}
+.screen {
+    height: 100vh;
+    width: 100%;
+}
+/* flex utility  */
+/* media query  */
+@media screen and (max-width: 1400px) {
+    .img1{
+        display: block;
+    }
+    .img2{
+        display: none;
+    }
+}  
+/* @media screen and (max-width: 992px) {}  */
+@media screen and (max-width: 768px) {
+    header div.container-fluid {
+        padding-left: 0 !important;
+    }
+    .img1{
+        display: none;
+    }
+    .img2{
+        display: block;
+        margin-right: 30px;
+    }
+    .sidebar {
+        width: 80px;
+        font-size: large;
+    }
+    .sidebar span {
+        display: none;
+    }
+}  
+/* @media screen and (max-width: 576px) {}  */
