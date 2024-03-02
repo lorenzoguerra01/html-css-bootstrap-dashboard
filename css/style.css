@@ -96,17 +96,35 @@ main {
     overflow: auto;
 }
 
-table td {}
+#class-table td:not(:first-child){
+    text-align: center; 
+    white-space: nowrap;
+}
+.contain, .smaller{
+    font-size: smaller !important;
+}
+#class-table img{
+    width: 25px;
+    border-radius: 50%;
+}
 
 .blue-contain {
-    height: 100px;
     background-color: var(--color-b-contain);
+    color: white;
 }
 
 .card {
     margin-bottom: 20px;
 }
+.offcanvas-body div.row>div>span:first-child {
+    padding: 10px 0;
+    display: inline-block;
+    color: black;
+}
 
+.offcanvas input::placeholder {
+    font-weight: 500;
+}
 /* footer  */
 
 
@@ -148,6 +166,9 @@ table td {}
     .img2 {
         display: none;
     }
+    .offcanvas {
+        --bs-offcanvas-width: 50% !important;
+    }
 }
 
 /* @media screen and (max-width: 992px) {}  */
@@ -179,6 +200,9 @@ table td {}
 
     .sidebar span {
         display: none;
+    }
+    .offcanvas {
+        --bs-offcanvas-width: 100% !important;
     }
 }
 
